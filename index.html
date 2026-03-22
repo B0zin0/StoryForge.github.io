@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>StoryForge — MCSM Launcher</title>
+    <title>StoryForge</title>
     <link rel="icon" type="image/x-icon" href="icon.ico"/>
     <style>
         @font-face {
@@ -35,7 +35,6 @@
 
         .mc { font-family: 'Minecraft', sans-serif; }
 
-        /* Music toggle */
         #music-toggle {
             position: fixed;
             bottom: 24px;
@@ -54,7 +53,6 @@
         }
         #music-toggle:hover { border-color: var(--gold); }
 
-        /* Nav */
         nav {
             position: fixed;
             top: 0; left: 0; right: 0;
@@ -101,7 +99,6 @@
             color: #000 !important;
         }
 
-        /* Hero */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -186,7 +183,6 @@
         }
         .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
 
-        /* Section base */
         .section { padding: 100px 48px; max-width: 1140px; margin: 0 auto; }
 
         .section-tag {
@@ -214,7 +210,6 @@
             margin-bottom: 56px;
         }
 
-        /* Gold divider */
         .divider {
             height: 1px;
             background: var(--border);
@@ -222,7 +217,6 @@
             margin: 0 auto;
         }
 
-        /* Features */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -264,7 +258,6 @@
             line-height: 1.8;
         }
 
-        /* Screenshots */
         .screenshots-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -303,7 +296,6 @@
             color: var(--gold);
         }
 
-        /* Seasons */
         .seasons-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -354,7 +346,6 @@
             line-height: 1.7;
         }
 
-        /* Studio section */
         .studio-section {
             position: relative;
             overflow: hidden;
@@ -462,7 +453,6 @@
             flex-shrink: 0;
         }
 
-        /* Download */
         .download-block {
             background: var(--panel);
             border: 1px solid var(--border);
@@ -529,7 +519,6 @@
             margin: 0;
         }
 
-        /* Footer */
         footer {
             border-top: 1px solid var(--border);
             padding: 36px 48px;
@@ -579,26 +568,24 @@
 
 <button id="music-toggle" onclick="toggleMusic()">MUSIC: OFF</button>
 
-<!-- Nav -->
 <nav>
     <span class="nav-logo">STORYFORGE</span>
     <div class="nav-links">
         <a href="#features">Features</a>
-        <a href="#screenshots">Screenshots</a>
-        <a href="#seasons">Seasons</a>
-        <a href="#studio">Studio</a>
-        <a href="#download">Download</a>
+        <a href="#screenshots">Showcase</a>
+        <a href="#seasons">Supported Games</a>
+        <a href="#studio">Studio (W.I.P)</a>
+        <a href="#download">Download!</a>
         <a href="https://github.com/B0zin0/StoryForge" target="_blank">GitHub</a>
-        <a href="#download" class="nav-badge">Download v1.0</a>
+        <a href="#download" class="nav-badge">Download v1.1</a>
     </div>
 </nav>
 
-<!-- Hero -->
 <div class="hero">
     <div class="hero-glow"></div>
-    <span class="hero-badge">MCSM Launcher — v1.0 — Windows</span>
+    <span class="hero-badge">MCSM Launcher — v1.1 — Windows</span>
     <h1>STORYFORGE</h1>
-    <p>The cleanest way to launch Minecraft: Story Mode. Built by a fan, kept alive for the community.</p>
+    <p>The best way to launch Minecraft: Story Mode.</p>
     <div class="hero-btns">
         <a href="#download" class="btn-gold">Download Now</a>
         <a href="#features" class="btn-outline">See Features</a>
@@ -609,9 +596,9 @@
 
 <!-- Features -->
 <div class="section" id="features">
-    <div class="section-tag">What's inside</div>
+    <div class="section-tag">What's inside?</div>
     <h2 class="section-title">Everything you need to play</h2>
-    <p class="section-body">StoryForge isn't just a shortcut. It's a proper launcher built from scratch with features that actually make sense for MCSM.</p>
+    <p class="section-body">StoryForge isn't just a shortcut. It's a proper launcher built from scratch with features that actually make sense for MCSM and Telltale Games!.</p>
 
     <div class="features-grid">
         <div class="feature-card">
@@ -633,7 +620,7 @@
                 <svg viewBox="0 0 24 24"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5z"/></svg>
             </div>
             <h3>Mod manager</h3>
-            <p>Install, enable, disable, and remove mods without touching game files manually. Supports textures, scripts, audio, archives and more.</p>
+            <p>Install, enable, disable, and remove mods without touching game files manually. Supports textures, scripts, audio, archives and more. More on supported files in the ReadMe.</p>
         </div>
         <div class="feature-card">
             <div class="feature-icon">
@@ -653,7 +640,7 @@
             <div class="feature-icon">
                 <svg viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.054a19.97 19.97 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
             </div>
-            <h3>Discord Rich Presence</h3>
+            <h3>Discord Presence</h3>
             <p>Shows what season you're playing in your Discord status. Updates automatically when you launch and clears when you're done.</p>
         </div>
     </div>
@@ -661,7 +648,6 @@
 
 <div class="divider"></div>
 
-<!-- Screenshots -->
 <div class="section" id="screenshots">
     <div class="section-tag">In action</div>
     <h2 class="section-title">See it for yourself</h2>
@@ -689,25 +675,24 @@
 
 <div class="divider"></div>
 
-<!-- Seasons -->
 <div class="section" id="seasons">
     <div class="section-tag">Supported games</div>
-    <h2 class="section-title">Both seasons, fully supported</h2>
-    <p class="section-body">StoryForge works with both seasons of Minecraft: Story Mode out of the box.</p>
+    <h2 class="section-title">Both seasons, fully supported + more all episodes!</h2>
+    <p class="section-body">StoryForge works with both seasons of Minecraft: Story Mode</p>
 
     <div class="seasons-grid">
         <div class="season-card s1">
             <img src="season1.png" alt="Minecraft Story Mode Season 1"/>
             <div class="season-info">
                 <h3>SEASON 1 — 2015</h3>
-                <p>Eight episodes following Jesse and the Order of the Stone. The Wither Storm saga that started it all. One of Telltale's most beloved games.</p>
+                <p>Five episodes + 3 Adventure Pass, following Jesse and the Order of the Stone. After Ivor well-known summons his "beast" Jesse and his friends need to reassemble the order! - Telltale</p>
             </div>
         </div>
         <div class="season-card s2">
             <img src="season2.png" alt="Minecraft Story Mode Season 2"/>
             <div class="season-info">
                 <h3>SEASON 2 — 2017</h3>
-                <p>Five episodes with Jesse facing the Admin and a whole new set of challenges. Darker tone, higher stakes, a different kind of adventure.</p>
+                <p>Five episodes with Jesse facing the Admin and a whole new set of challenges. Darker tone, higher stakes, a different kind of adventure. - Telltale</p>
             </div>
         </div>
     </div>
@@ -715,7 +700,6 @@
 
 <div class="divider"></div>
 
-<!-- Studio section -->
 <div class="studio-section" id="studio">
     <video class="studio-video" src="bg_video.mp4" autoplay muted loop playsinline></video>
     <div class="studio-overlay"></div>
@@ -723,7 +707,7 @@
         <span class="studio-beta-badge">Open Beta — April 1st</span>
         <div class="studio-title">STORYFORGE STUDIO</div>
         <div class="studio-subtitle">A v0.1 studio for making MCSM mods</div>
-        <p class="studio-body">StoryForge Studio is a standalone toolkit for Minecraft: Story Mode modding. Open, view, and edit the actual files that make up the game — textures, scripts, audio, archives and more. Built for everyone from first-time modders to veterans.</p>
+        <p class="studio-body">StoryForge Studio is a standalone toolkit for Minecraft: Story Mode modding. Open, view, and edit the actual files that make up the game — textures, scripts, audio, archives and more. Built for everyone from first-time modders to Old Builders!</p>
         <div class="studio-date">Open Beta dropping April 1st, 2026</div>
         <div class="studio-features">
             <div class="studio-feature">Texture viewer and editor</div>
@@ -739,19 +723,18 @@
 
 <!-- Download -->
 <div class="download-block" id="download">
-    <span class="version-tag">v1.0 — Windows 10/11 — Free</span>
+    <span class="version-tag">(Latest) v1.1 — Windows 10/11 — Free</span>
     <h2>DOWNLOAD</h2>
-    <p>No installer. No account. Just unzip and run.<br>Keep StoryForge.exe and the Assets folder together.</p>
-    <a href="https://github.com/B0zin0/StoryForge/releases/latest" class="btn-gold" target="_blank">Download StoryForge v1.0</a>
-    <div class="sysreq">Windows 10 or 11 (64-bit) · No install required · ~15MB</div>
+    <p>No installer. No account. Just unzip and run.<br> Warning: Keep StoryForge.exe and the Assets folder together.</p>
+    <a href="https://github.com/B0zin0/StoryForge/releases/latest" class="btn-gold" target="_blank">Download StoryForge v1.1</a>
+    <div class="sysreq">Windows 10 or 11 (64-bit) · No install required · ~161MB</div>
 
     <div class="defender-box">
         <h4>Windows Defender warning?</h4>
-        <p>Because StoryForge isn't signed with a paid certificate yet, Windows may flag it as unknown. It's completely safe — the full source code is on GitHub. To run it: click <strong>More info</strong> on the SmartScreen warning, then <strong>Run anyway</strong>.</p>
+        <p>Because StoryForge isn't signed with a paid yet, Windows may flag it as unknown or as a virus. It's completely safe — the full source code is on GitHub. To run it: click <strong>More info</strong> on the SmartScreen warning, then <strong>Run anyway</strong>.</p>
     </div>
 </div>
 
-<!-- Footer -->
 <footer>
     <span class="footer-logo">STORYFORGE</span>
     <p>Not affiliated with Telltale Games or Mojang. Built by B0zin0.</p>
